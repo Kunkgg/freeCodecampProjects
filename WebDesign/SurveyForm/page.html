@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="./page.css">
+
+    </head>
+    <body translate="no">
+        <h1 id="title">Survey Form</h1>
+        <div id="form-outer">
+        <p id="description">Here is a DOTA survey form.</p>
+        <form action="" id="survey-form" method="GET">
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="name" id="name-label">*姓名:</label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" name="name" id="name" placeholder="请输入姓名" class="input-field" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="email" id="email-label">*邮箱:</label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" id="email" placeholder="请输入邮箱" class="input-field" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="age" id="number-label">*年龄:</label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="age" id="number" placeholder="年龄" min="1" max="110" class="input-field" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="role">职业:</label>
+                </div>
+                <div class="rightTab">
+                <select name="role" id="dropdown" class="dropdown">
+                    <option disabled selected value>选择一个职业</option>
+                    <option value="student">学生</option>
+                    <option value="job">上班族</option>
+                    <option value="player">职业玩家</option>
+                    <option value="game-anchor">游戏主播</option>
+                    <option value="no">不想告诉你</option>
+                    <option value="other">其他</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="sex">性别:</label>
+                </div>
+                <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="sex" value="1" class="userRatings">
+                            女
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="sex" value="2" class="userRatings">
+                            男
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="sex" value="3" class="userRatings">
+                            中性
+                        </label>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="dota1">你玩过DOTA-1吗 ?</label>
+                </div>
+                <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="dota1" value="1" class="userRatings">
+                            没玩过
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="dota1" value="2" class="userRatings">
+                            玩过
+                        </label>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="tianti">天体分段:</label>
+                </div>
+                <div class="rightTab">
+                <select name="tianti" id="tianti" class="dropdown">
+                    <option disabled selected value>选择一个分段</option>
+                    <option value="0">不打天体</option>
+                    <option value="1">500分以下</option>
+                    <option value="2">500-1000</option>
+                    <option value="3">1000-2000</option>
+                    <option value="4">2000-3000</option>
+                    <option value="5">3000-4000</option>
+                    <option value="6">4000-5000</option>
+                    <option value="7">5000-6000</option>
+                    <option value="8">7000-8000</option>
+                    <option value="9">8000-9000</option>
+                    <option value="10">9000-10000</option>
+                    <option value="11">10000分以上</option>
+                </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="herotype">最喜欢玩哪种类型英雄 ?</label>
+                </div>
+                <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="checkbox">
+                        <label>
+                            <input type="checkbox" name="herotype" id="herotype" value="1" class="userRatings">
+                            力量
+                        </label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input type="checkbox" name="herotype" id="herotype" value="2" class="userRatings">
+                            敏捷
+                        </label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input type="checkbox" name="herotype" id="herotype" value="3" class="userRatings">
+                            智力
+                        </label>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comment">你有什么想说的 ?</label>
+                </div>
+                <div class="rightTab">
+                    <textarea name="comment" id="comment" class="input-field" style="height: 60px; resize: vertical; margin-top: 10px; margin-bottom: 10px;" placeholder="在这里留下你想说的话..."></textarea>
+                </div>
+            </div>
+
+            <button id="submit" type="submit">提交</button>
+        </form>
+    </div>
+    </body>
+</html>
